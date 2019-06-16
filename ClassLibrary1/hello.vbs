@@ -15,6 +15,10 @@ Sub GetHelloTest2
     Set objObject = WScript.CreateObject("ClassLibrary1.Class1")
     Dim objOutput
     Set objOutput = objObject.HelloList
+
+    For each item in objOutput
+        WScript.Echo item
+    Next
     '?? WScript.Echo objOutput ??
 End Sub
 

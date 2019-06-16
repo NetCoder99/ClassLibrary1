@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+
+// %SystemRoot%\Microsoft.NET\Framework\v4.0.30319\regasm.exe ClassLibrary1.dll
+// %SystemRoot%\Microsoft.NET\Framework64\v4.0.30319\regasm.exe ClassLibrary1.dll
 
 namespace ClassLibrary1
 {
@@ -11,15 +15,19 @@ namespace ClassLibrary1
     {
         public string Hello()
         {
-            return "Hello world, how are you?";
+            return "Hello world, how are you doing?";
         }
-        public List<string> HelloList()
+        public ArrayList HelloList()
         {
-            List<string> rtn_list = new List<string>();
-            rtn_list.Add("String1");
-            rtn_list.Add("String2");
-            rtn_list.Add("String3");
-            rtn_list.Add("String4");
+            ArrayList rtn_list = new ArrayList
+            {
+                "String1",
+                "String2",
+                "String3",
+                "String4",
+                "String5",
+                "String6"
+            };
             return rtn_list;
         }
     }

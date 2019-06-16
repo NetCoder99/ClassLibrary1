@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
 namespace ClassLibrary1
@@ -9,7 +10,7 @@ namespace ClassLibrary1
     public interface IClass1
     {
         string Hello();
-        List<string> HelloList();
+        ArrayList HelloList();
     }
 
 }
